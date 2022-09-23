@@ -2,25 +2,27 @@
 
   <head>
     <script>
-      let history = '';
+      let history = '' ;
 
-      //function that display value 
+      
       function dis(val) {
         document.getElementById("result").value += val;
 
-        addToHistory(val);
+        addToHistory(val );
       }
 
-      //function that evaluates the digit and return result 
+       
       function solve() {
         let x = document.getElementById("result").value;
         let y = eval(x);
         document.getElementById("result").value = y;
 
-        addToHistory('=' + y);
+        addToHistory('=' + y );
+        
+        
       }
 
-      //function that clear the display 
+      
       function clr() {
         document.getElementById("result").value = "";
 
@@ -28,12 +30,14 @@
       }
 
       function addToHistory(value) {
-        history += value;
-        document.getElementById('history').innerText = history;
+        history += value ;
+       
+        document.getElementById('history' ).innerText = history ;
+        
       }
 
     </script>
-    <!-- for styling -->
+    
     <style>
       .title {
         margin-bottom: 10px;
@@ -59,7 +63,7 @@
 
     </style>
   </head>
-  <!-- create table -->
+  
 
   <body>
     <div class=title>Calculator</div>
@@ -111,3 +115,4 @@
   </body>
 
 </html>
+
